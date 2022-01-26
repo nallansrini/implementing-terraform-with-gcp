@@ -22,6 +22,7 @@ resource "google_compute_instance" "this" {
   }
 
   metadata_startup_script = "sudo apt-get update; echo 'Hello World!' >> /home/${var.username}/startup"
+
 }
 
 resource "google_compute_instance" "beta_this" {
